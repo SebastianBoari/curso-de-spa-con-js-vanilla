@@ -5,6 +5,8 @@ const Character = async () => {
     const id = getHash()
     const character = await getData(id)
 
+    window.removeEventListener('scroll', null);
+
     const view = `
         <div class="Character-inner">
             <article class="Character-card">
