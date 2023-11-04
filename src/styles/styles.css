@@ -170,3 +170,44 @@ body {
 .card_footer-button:hover {
     background: #0171a8;
 }
+
+.character-container {
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    padding: 64px 0;
+    margin-top: 68px;
+}
+
+.character-info {
+    background: #3d3d3d;
+    padding: 16px;
+    border-radius: 6px;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 32px;
+}
+
+.character-card img {
+    border-radius: 6px;
+}
+
+.character-card h2 {
+    color: #EBEBEB;
+    padding: 16px 0;
+}
+
+.character-table {
+    border-radius: 6px;
+    color: #EBEBEB;
+}
+
+.character-table tr {}
+
+.character-table tr td {
+    text-align: center;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 500;
+}

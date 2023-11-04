@@ -8,21 +8,41 @@ const Character = async () => {
     window.removeEventListener('scroll', null);
 
     const view = `
-        <div class="Character-inner">
-            <article class="Character-card">
-                <img src="${character.image}" alt="${character.name}">
-                <h2>${character.name}</h2>
-            </article>
-            
-            <article class="Character-card">
-                <h3>Episodios: <span>${character.episode.length}</span></h3>
-                <h3>Status: <span>${character.status}</span></h3>
-                <h3>Species: <span>${character.species}</span></h3>
-                <h3>Gender: <span>${character.gender}</span></h3>
-                <h3>Origin: <span>${character.origin.name}</span></h3>
-                <h3>Last location: <span>${character.location.name}</span></h3>
-            </article>
-        </div>
+        <article class="character-container">
+            <div class="character-info">
+                <div class="character-card">
+                    <img src="${character.image}" alt="${character.name}">
+                    <h2>${character.name}</h2>
+                </div>
+                
+                <table class="character-table">
+                    <tr>
+                        <td>Episodios:</td>
+                        <td>${character.episode.length}</td>
+                    </tr>
+                    <tr>
+                        <td>Status:</td>
+                        <td>${character.status}</td>
+                    </tr>
+                    <tr>
+                        <td>Species:</td>
+                        <td>${character.species}</td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>${character.gender}</td>
+                    </tr>
+                    <tr>
+                        <td>Origin:</td>
+                        <td>${character.origin.name}</td>
+                    </tr>
+                    <tr>
+                        <td>Last location:</td>
+                        <td>${character.location.name}</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
     `
     return view
 }
