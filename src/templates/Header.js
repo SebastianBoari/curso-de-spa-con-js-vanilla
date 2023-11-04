@@ -2,7 +2,7 @@ import GithubIcon from '../icons/GithubIcon'
 import HomeIcon from '../icons/HomeIcon'
 import InfoIcon from '../icons/InfoIcon'
 import WickrickIcon from '../icons/WickrickIcon'
-// <img src="https://i.imgur.com/usvTZv0.png" alt="wikirick logo">
+
 const Header = () => {
     const view = `
         <div class="header">

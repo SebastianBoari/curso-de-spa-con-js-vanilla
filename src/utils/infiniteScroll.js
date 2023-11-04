@@ -24,17 +24,26 @@ const handleInfiniteScroll = async (characters) => {
             characters.results = [...characters.results, ...moreCharacters.results]
 
             const view = `
-                ${characters.results.map(character => `
-                <article class="Character-item">
-                    <a href="#/${character.id}/">
-                        <img src="${character.image}" alrt="${character.name}">
-                        <h2>${character.name}</h2>
+            ${characters.results.map(character => `
+            <div class="card">
+                <div class="card_header">
+                    <img class="card_header-image" src="${character.image}" alrt="${character.name}">
+                </div>
+    
+                <div class="card_footer">
+                    <h2 class="card_footer-name">${character.name}</h2>
+                    
+                    <p class="card_footer-location">${character.location.name}</p>
+                    
+                    <a class="card_footer-button" href="#/${character.id}/">
+                        View more
                     </a>
-                </article>
-                `).join('')}
+                </div>
+            </div>
+            `).join('')}
             `
 
-            document.getElementById('characters-container').innerHTML = view
+            document.getElementById('characters').innerHTML = view
 
         } catch (error) {
             console.error(error)
