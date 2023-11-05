@@ -7,14 +7,14 @@ const Header = () => {
     const view = `
         <div class="header">
             <div class="header_brand">
-                <a href="/" class="header_brand-link">
+                <a href="https://sebastianboari.github.io/curso-de-spa-con-js-vanilla/" class="header_brand-link">
                     ${WickrickIcon()}
                 </a>
             </div>
 
             <ul class="header_nav">
                 <li class="header_nav-item">
-                    <a class="item_link" href="/">
+                    <a class="item_link" href="https://sebastianboari.github.io/curso-de-spa-con-js-vanilla/">
                         ${HomeIcon()}
                     </a>
                 </li>
