@@ -20,7 +20,7 @@ const Header = () => {
                 </li>
                 
                 <li class="header_nav-item">
-                    <a class="item_link" href="/">
+                    <a class="item_link" href="https://github.com/SebastianBoari">
                         ${GithubIcon()}
                     </a>
                 </li>

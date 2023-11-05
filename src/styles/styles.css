@@ -211,3 +211,21 @@ body {
     font-size: 16px;
     font-weight: 500;
 }
+
+.error404-container {
+    padding: 64px 0;
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.error404 {
+    color: #EBEBEB;
+    grid-column: 2/3;
+    font-size: 48px;
+    text-align: center;
+}
+
+.error404 p {
+    font-weight: 600;
+}
